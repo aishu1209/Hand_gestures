@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Hand Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <center>
+      <h1 class="heading">Hand Gesture Web App
+          <br>
+          <span>&#9996;</span>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#128078;</span>
+          <span>🙏</span>
+          
+          
+      </h1>
+
+      <h2>Take a selfie of a hand gesture to know about its meaning</h2>
+      <h3>The model is trained on the following gestures</h3>
+      <label class="icons">👌|👍|👎|✌️|👆|🙏  </label>
+      <br>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="webcam_view">Webcam View</label>
+        <div id="camera"></div>
+        <br>
+        <button class="capture_image" onclick="takeSnapshot()">Capture Image</button>
+      </div>
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Meaning</label>
+      <div id="result_text"></div>
+      <div id="result_accuracy"></div>
+      <div id="result_icon"></div>
+      <div id="result_meaning"></div>
+      </div>
+
+
+
+
+  
+      <div class="col-md-4 col-sm-12 col-xs-12">
+
+      <label>Snapshot</label>
+      <div id="result_image"></div>
+<br>
+      <button id="identify_image" onclick="check()">Identify Image</button>
+ 
+    </div>
+      <script src="main.js"></script>
+    </center>
+  </body>
+  </html>

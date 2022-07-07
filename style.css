@@ -1,0 +1,59 @@
+.heading{
+    background-color: black;
+    color: white;
+   font-size: 30px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+    width: 500px;
+    height: 125px;
+    padding-top:50px;
+    font-family: 'Patrick Hand', cursive;
+}
+body{
+    background-image: linear-gradient(to bottom right, cyan, pink);
+}
+
+label{
+    background-color: rgb(225, 165, 248);
+    border-radius: 8px;
+    font-size: 14px;
+    width:100px;
+    
+}
+.icons{
+    font-size: 35px;
+    width:auto;
+}
+
+.webcam_view{
+    width:100px;
+}
+
+#camera{
+    background-color: black;
+    width: 400px;
+    height:300px;
+}
+
+button{
+    background-color: rgb(225, 165, 248);
+    color: white;
+    border-radius: 7px;
+    border:none;
+    width:125px;
+    height:50spx;
+}
+
+#result_image{
+    background-color: black;
+    width:400px;
+    height:300px;
+}
+
+#result_text, #result_accuracy, #result_meaning{
+    font-size: 25px;
+}
+
+#result_icon{
+    font-size: 50px;
+}
